@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<odoo>
+
+    <!--Creating Email Template in Odoo-->
+
+
+        <record id="student_paiement_email" model="mail.template">
+            <field name="name">Student : Send by email</field>
+            <field name="model_id" ref="model_university_student"/>
+            <field name="email_from">${object.student_id.login}</field>
+            <field name="email_to">${object.e_mail}</field>
+            <field name="subject">Student Paiement (Ref ${object.f_name})</field>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px;">
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        Dear ${object.f_name}
+                        <br /><br />
+                        Here is your patient card with reference ${object.name_seq}
+                        <br /><br />
+                        Age : ${object.patient_age}
+                        Contact Number : ${object.l_name}
+                        <br /><br />
+                        If you have queries feel free to ask.
+                    </p>
+                </div>
+            </field>
+<!--            <field name="report_template" ref="report_patient_card"/>-->
+<!--            <field name="report_name">Patient Card_${(object.name_seq)}</field>-->
+        </record>
+
+
+</odoo>
