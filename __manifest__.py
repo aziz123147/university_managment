@@ -16,13 +16,14 @@
             'security/security.xml',
             'security/ir.model.access.csv',
             'data/sequences.xml',
-            'data/cron.xml',
+            # 'data/cron.xml',
+            'report/report_student.xml',
+            'report/template_student.xml',
             'data/mail_template.xml',
-        #    'wizards/teacher_grade.xml',
-        #   'report/report_teacher.xml',
-        #   'report/template_teacher.xml',
-            #   'report/report_student.xml',
-            #    'report/template_student.xml',
+            #    'wizards/teacher_grade.xml',
+            #   'report/report_teacher.xml',
+            #   'report/template_teacher.xml',
+
             #   'report/report_department.xml',
             #   'report/template_department.xml',
             'views/website.xml',
@@ -33,7 +34,6 @@
             'views/student_view.xml',
             'views/class_view.xml',
             'views/subject_view.xml',
-
 
         ],
 

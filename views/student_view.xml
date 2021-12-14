@@ -80,6 +80,9 @@
                          groups="university_managment.group_university_administrateur"/>
                          <button name="action_administration" type="object" states='paiment_reg' string="Droit Etudiant" class="oe_highlight"
                          groups="university_managment.group_university_administrateur"/>
+                         <button name="action_mail_send" type="object" states='paiment_reg' string="Send mail"
+                                class="oe_highlight"
+                                groups="university_managment.group_university_administrateur"/>
 
 
 
@@ -223,22 +226,20 @@
               name="Nouveaux Inscris"
               parent="student_menu_root"
               action="inscris_action_window"
-               sequence="10"
-              groups="university_managment.group_university_administrateur"/>
+              sequence="10"/>
+
         <menuitem id="attente_menu"
               name="Liste D'Attente"
               parent="student_menu_root"
               action="attente_action_window"
-              sequence="10"
-              groups="university_managment.group_university_administrateur"/>
+              sequence="10"/>
 
 
     <menuitem id="affecte_menu"
               name="En attente de Paiement"
               parent="student_menu_root"
               action="affecte_action_window"
-              sequence="10"
-              groups="university_managment.group_university_administrateur"/>
+              sequence="10"/>
 
 
     <menuitem id="student_menu"
