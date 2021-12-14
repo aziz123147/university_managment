@@ -223,20 +223,22 @@
               name="Nouveaux Inscris"
               parent="student_menu_root"
               action="inscris_action_window"
-              sequence="10"/>
-
+               sequence="10"
+              groups="university_managment.group_university_administrateur"/>
         <menuitem id="attente_menu"
               name="Liste D'Attente"
               parent="student_menu_root"
               action="attente_action_window"
-              sequence="10"/>
+              sequence="10"
+              groups="university_managment.group_university_administrateur"/>
 
 
     <menuitem id="affecte_menu"
               name="En attente de Paiement"
               parent="student_menu_root"
               action="affecte_action_window"
-              sequence="10"/>
+              sequence="10"
+              groups="university_managment.group_university_administrateur"/>
 
 
     <menuitem id="student_menu"
